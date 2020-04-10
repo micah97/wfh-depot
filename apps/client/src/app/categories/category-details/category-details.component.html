@@ -1,0 +1,27 @@
+<mat-card>
+  <mat-card-title>
+    {{selectedCategory.id ? selectedCategory.name : 'Create a Category'}}
+  </mat-card-title>
+  <hr>
+  <form [formGroup]="form" (submit)="saved.emit(form.value)">
+    <mat-card-content>
+      <mat-form-field appearance="outline">
+        <mat-label class="light">Name</mat-label>
+        <input class="light" matInput type="text" name="name" placeholder="Category Name" formControlName="name">
+      </mat-form-field>
+      <div class="light" *ngIf="selectedCategory.id">
+        <h3>Products:</h3>
+        <mat-grid-list cols="4" rowHeight="2:1">
+          <mat-grid-tile *ngFor="let product of selectedCategory.products" (click)="selected.emit(product)">
+            {{product.name}}
+          </mat-grid-tile>
+        </mat-grid-list>
+      </div>
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button type="button" mat-button color="accent" [disabled]="form.invalid" (click)="deleted.emit(selectedCategory)">Delete</button>
+      <button type="button" mat-button color="accent" (click)="cancelled.emit()">Cancel</button>
+      <button type="submit" mat-button color="primary" [disabled]="form.invalid">Save</button>
+    </mat-card-actions>
+  </form>
+</mat-card>

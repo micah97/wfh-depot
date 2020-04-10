@@ -1,0 +1,17 @@
+<div class="container flex">
+  <div class="column--left">
+    <products-products-list
+      [products]="products$ | async"
+      (selected)="select($event)"></products-products-list>
+    </div>
+
+    <div class="column--right">
+      <products-product-details
+      [form]="form"
+      [categories]="categories$ | async"
+      [product]="selectedProduct$ | async"
+      (saved)="save($event)"
+      (deleted)="delete($event)"
+      (cancelled)="reset()"></products-product-details>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+.sub-products-list {
+  mat-list-item {
+    height: 20px;
+    .mat-list-item-content {
+      font-size: 14px;
+    }
+  }
+}
+
+h3 {
+  margin: 0;
+}
+
+mat-grid-list {
+  margin-bottom: 15px;
+
+  mat-grid-tile {
+    transition: .2s ease-in-out;
+  }
+
+  mat-grid-tile:hover {
+    cursor: pointer;
+    box-shadow:  6px 6px 12px #e6e6e6,
+             -6px -6px 12px #ffffff;
+  }
+}
+
+mat-card {
+  * {
+    color: #523D59;
+  }
+}

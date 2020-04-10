@@ -17,6 +17,18 @@
     "client-e2e": {
       "tags": [],
       "implicitDependencies": ["client"]
+    },
+    "core-data": {
+      "tags": []
+    },
+    "core-state": {
+      "tags": []
+    },
+    "material-module": {
+      "tags": []
+    },
+    "delete-dialog": {
+      "tags": []
     }
   }
 }

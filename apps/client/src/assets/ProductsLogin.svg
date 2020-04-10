@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1230px" height="1366px" viewBox="0 0 1230 1366" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Products Login</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="76.5391457%" y1="91.3625418%" x2="78.0242224%" y2="93.5721267%" id="linearGradient-1">
+            <stop stop-color="#8822FB" offset="0%"></stop>
+            <stop stop-color="#50E3C2" offset="98.4194364%"></stop>
+            <stop stop-color="#4A90E2" offset="100%"></stop>
+            <stop stop-color="#9013FE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="43.5710658%" y1="42.310681%" x2="78.0242224%" y2="93.5721267%" id="linearGradient-2">
+            <stop stop-color="#8822FB" offset="0%"></stop>
+            <stop stop-color="#4A90E2" offset="45.746026%"></stop>
+            <stop stop-color="#50E3C2" offset="98.4194364%"></stop>
+            <stop stop-color="#9013FE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="32.3848305%" y1="20.0179813%" x2="78.0242224%" y2="93.5721267%" id="linearGradient-3">
+            <stop stop-color="#8822FB" offset="0%"></stop>
+            <stop stop-color="#4A90E2" offset="44.631394%"></stop>
+            <stop stop-color="#50E3C2" offset="100%"></stop>
+            <stop stop-color="#9013FE" offset="100%"></stop>
+        </linearGradient>
+        <filter x="-1.6%" y="-1.6%" width="103.2%" height="103.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-1.5%" y="-1.5%" width="103.1%" height="103.1%" filterUnits="objectBoundingBox" id="filter-5">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <filter x="-1.7%" y="-1.7%" width="103.4%" height="103.4%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="4" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="Products-Login" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="url(#linearGradient-1)" transform="translate(1079.000000, 109.000000) rotate(-152.000000) translate(-1079.000000, -109.000000) " cx="1079" cy="109" r="500"></circle>
+        <ellipse id="Oval" fill="url(#linearGradient-2)" transform="translate(382.172383, 966.109949) rotate(-108.000000) translate(-382.172383, -966.109949) " cx="382.172383" cy="966.109949" rx="554.5" ry="565.5"></ellipse>
+        <circle id="Oval" fill="url(#linearGradient-3)" filter="url(#filter-4)" transform="translate(567.841746, 1231.841746) rotate(-126.000000) translate(-567.841746, -1231.841746) " cx="567.841746" cy="1231.84175" r="374.5"></circle>
+        <circle id="Oval" fill="url(#linearGradient-2)" filter="url(#filter-5)" transform="translate(1119.580284, 1036.580284) rotate(-104.000000) translate(-1119.580284, -1036.580284) " cx="1119.58028" cy="1036.58028" r="391.5"></circle>
+        <circle id="Oval" fill="url(#linearGradient-2)" filter="url(#filter-6)" transform="translate(1050.002539, 429.002539) rotate(-153.000000) translate(-1050.002539, -429.002539) " cx="1050.00254" cy="429.002539" r="350.5"></circle>
+        <circle id="Oval" fill="url(#linearGradient-2)" cx="293" cy="264" r="500"></circle>
+        <text id="WFH-DEPOT" font-family="Lato-Black, Lato" font-size="70" font-weight="700" fill="#FFFFFF">
+            <tspan x="45" y="178">WFH DEPOT</tspan>
+        </text>
+        <path d="M0,219.965384 C0.888526715,221.234124 1.85996448,222.06756 2.91431331,222.465691 C3.96866213,222.863822 5.67602697,223.041925 8.03640784,223 L382,223 L382,225 L8.01192303,225 C5.50956363,224.991747 3.81036038,225.15825 2.91431331,225.499508 C2.01826623,225.840767 1.04682846,226.691376 0,228.051334 L0,219.965384 Z" id="Rectangle" fill="#FFFFFF"></path>
+    </g>
+</svg>

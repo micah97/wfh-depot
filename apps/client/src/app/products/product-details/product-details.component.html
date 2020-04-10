@@ -1,0 +1,40 @@
+<mat-card>
+  <mat-card-title>
+      {{selectedProduct.id ? selectedProduct.name : 'Create a Product'}}
+  </mat-card-title>
+  <hr>
+  <form [formGroup]="form" (submit)="saved.emit(form.value)">
+    <mat-card-content>
+
+      <mat-form-field appearance="outline">
+        <mat-label class="light">Name</mat-label>
+        <input class="light" matInput type="text" name="name" placeholder="Product Name" formControlName="name">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label class="light">Description</mat-label>
+        <input class="light" matInput type="text" name="name" placeholder="Description" formControlName="description">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label class="light">Price</mat-label>
+        <input class="light" matInput type="number" name="price" placeholder="Price" formControlName="price">
+        <span class="price-prefix" matPrefix>$&nbsp;</span>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label class="light">Category</mat-label>
+        <mat-select formControlName="categoryId">
+          <mat-option placeholder="Category" *ngFor="let cat of categories" [value]="cat.id">{{cat.name}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label class="light">Quantity in Stock</mat-label>
+        <input class="light" matInput type="number" name="quantity" placeholder="1000" formControlName="quantityInStock">
+      </mat-form-field>
+
+    </mat-card-content>
+    <mat-card-actions align="end">
+      <button type="button" mat-button color="accent" [disabled]="form.invalid" (click)="deleted.emit(form.value)">Delete</button>
+      <button type="button" mat-button color="accent" (click)="cancelled.emit()">Cancel</button>
+      <button type="submit" mat-button color="primary" [disabled]="form.invalid">Save</button>
+    </mat-card-actions>
+  </form>
+</mat-card>

@@ -1,1 +1,161 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../../../node_modules/@angular/material/theming';
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:200,400,700&display=swap');
+
+@include mat-core();
+
+$client-primary: mat-palette($mat-indigo);
+$client-accent: mat-palette($mat-pink, A200, A100, A400);
+
+$client-warn: mat-palette($mat-red);
+
+$client-theme: mat-light-theme($client-primary, $client-accent, $client-warn);
+
+@include angular-material-theme($client-theme);
+
+$primary: #585DBF;
+$secondary: #50E3C2;
+$dark: #523D59;
+$grey: #EBEEF6;
+
+* {
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; display: flex; }
+
+products-root {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+// Toolbar
+mat-toolbar {
+  z-index: 900;
+
+  >.mat-mini-fab {
+    margin-right: 10px;
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .title {
+    vertical-align: middle;
+  }
+}
+
+.mat-drawer-side {
+  border: none;
+}
+
+mat-card {
+  box-shadow: none !important;
+  mat-card-title, span, p {
+    color: $dark;
+  }
+
+  hr {
+    width: 120px;
+    text-align: left;
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: $primary;
+  }
+}
+
+.container {
+  height: 100%;
+  min-height: 100%;
+  background-color: $grey;
+}
+
+.clickable:hover {
+  cursor: pointer;
+  background-color: $grey;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.light {
+  font-weight: 200 !important;
+}
+
+.column {
+  align-content: stretch;
+  margin: 15px;
+  flex: 1;
+
+  &--left {
+    @extend .column;
+    max-width: 400px !important;
+    margin-right: 7.5px !important;
+  }
+
+  &--right {
+    @extend .column;
+    margin-left: 7.5px !important;
+  }
+}
+
+
+mat-list-item {
+  margin: 3px 0;
+  border-radius: 25px;
+  padding: 10px 0 !important;
+}
+
+.spacer {
+  padding: 10px 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.selected, .selected:hover {
+  background-color: $primary;
+  * {
+    color: white;
+  }
+}
+
+// FORM
+mat-form-field {
+  width: 100%;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-prefix {
+  top: -.20em !important;
+}
+
+.mat-form-field-infix {
+  font-weight: 200 !important;
+}
+
+form {
+  padding-top: 15px;
+  ::ng-deep .mat-select-value-text {
+    font-weight: 200 !important;
+  }
+}
+
+// CARD ACTIONS
+mat-card-actions {
+  button {
+    box-shadow: inset 11px 11px 22px #f5f5f5,
+            inset -11px -11px 22px #ffffff;
+  }
+}

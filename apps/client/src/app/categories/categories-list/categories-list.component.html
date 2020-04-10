@@ -1,0 +1,19 @@
+<mat-card>
+  <mat-card-title>Categories</mat-card-title>
+  <hr>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item [class.selected]="(selectedId$ | async) === category.id" (click)="selected.emit(category)" class="clickable" *ngFor="let category of categories">
+        <span class="spacer light">
+          <span class="category-name">
+            {{category.name}}
+          </span>
+          <span class="fs-14">
+            <span>Products:</span>
+            {{category.products.length}}
+          </span>
+        </span>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

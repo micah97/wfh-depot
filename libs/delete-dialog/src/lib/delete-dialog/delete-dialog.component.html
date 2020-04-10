@@ -1,0 +1,6 @@
+<p mat-dialog-title>Are you sure you want to delete {{data.item.name}}?</p>
+
+<div mat-dialog-actions align="end">
+  <button type="button" mat-button (click)="cancel()" color="primary">Cancel</button>
+  <button type="button" mat-button (click)="delete()" color="accent">Confirm</button>
+</div>
